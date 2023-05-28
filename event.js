@@ -12,9 +12,10 @@ function send() {
     let friend = "";
     if (document.querySelector('#infosource-media').checked) media = document.querySelector('#infosource-media').value;
     if (document.querySelector('#infosource-friend').checked) friend = document.querySelector('#infosource-friend').value;
+    let code = document.querySelector('#codeValue').value;
 
     $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbx5NmpamanCrQyoeMNUbxdcERz88TY3P4EGTh-XET8ge5P1X1ycjvFKcRL_yao6HoEG6Q/exec",
+        url: "https://script.google.com/macros/s/AKfycbySU-tRKOCvTp90Wt5AbhuGJj06O3KcTCWiAVG4T7w5QW7j97LPARuv1G8qqQgthc0sXQ/exec",
         data: {
             "name": name,
             "phone": phone,
@@ -22,7 +23,8 @@ function send() {
             "foodMeat": meat,
             "foodVege": vege,
             "infoMedia": media,
-            "infoFriend": friend
+            "infoFriend": friend,
+            "codeSkill": code
         },
         // success: function(response) {
         //     if (response == "成功") {
