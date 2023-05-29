@@ -6,8 +6,8 @@ function send() {
     let mail = document.querySelector('#mailValue').value;
     let meat = "";
     let vege = "";
-    if (document.querySelector('#foodValue-meat').checked) meat = document.querySelector('#foodValue-meat').value;;
-    if (document.querySelector('#foodValue-vegetarian').checked) vege = document.querySelector('#foodValue-vegetarian').value;;
+//     if (document.querySelector('#foodValue-meat').checked) meat = document.querySelector('#foodValue-meat').value;;
+//     if (document.querySelector('#foodValue-vegetarian').checked) vege = document.querySelector('#foodValue-vegetarian').value;;
     let media = "";
     let friend = "";
     if (document.querySelector('#infosource-media').checked) media = document.querySelector('#infosource-media').value;
