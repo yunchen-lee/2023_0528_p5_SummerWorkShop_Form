@@ -2,6 +2,7 @@ let sendButton = document.querySelector('button');
 
 function send() {
     let name = document.querySelector('#nameValue').value;
+    let age = document.querySelector('#ageValue').value;
     let phone = document.querySelector('#phoneValue').value;
     let mail = document.querySelector('#mailValue').value;
     let meat = "";
@@ -15,9 +16,10 @@ function send() {
     let code = document.querySelector('#codeValue').value;
 
     $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbySU-tRKOCvTp90Wt5AbhuGJj06O3KcTCWiAVG4T7w5QW7j97LPARuv1G8qqQgthc0sXQ/exec",
+        url: "https://script.google.com/macros/s/AKfycbwSYjiI0qoGRt68oWUAw18ZVQjjglegztQ5FFD0Gq7SQmQtA7NOzTskIlKrQLc9wZF0rA/exec",
         data: {
             "name": name,
+            "age": age,
             "phone": phone,
             "mail": mail,
             "foodMeat": meat,
