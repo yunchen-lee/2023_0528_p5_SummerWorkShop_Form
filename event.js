@@ -14,9 +14,11 @@ function send() {
     if (document.querySelector('#infosource-media').checked) media = document.querySelector('#infosource-media').value;
     if (document.querySelector('#infosource-friend').checked) friend = document.querySelector('#infosource-friend').value;
     let code = document.querySelector('#codeValue').value;
+    let online = ""
+    if (document.querySelector('#onlineValue').checked) online = document.querySelector('#onlineValue').value;
 
     $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbwSYjiI0qoGRt68oWUAw18ZVQjjglegztQ5FFD0Gq7SQmQtA7NOzTskIlKrQLc9wZF0rA/exec",
+        url: "https://script.google.com/macros/s/AKfycbxQgiDSb90bUa7L3m5nwCb1OyAVUY6C825epk-9KRnxJ8q2ojO6qLuUBjEWBWO9C0EH7w/exec",
         data: {
             "name": name,
             "age": age,
@@ -26,7 +28,8 @@ function send() {
             "foodVege": vege,
             "infoMedia": media,
             "infoFriend": friend,
-            "codeSkill": code
+            "codeSkill": code,
+            "onlineCourse": online
         },
         // success: function(response) {
         //     if (response == "成功") {
