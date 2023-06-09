@@ -13,12 +13,18 @@ function send() {
     let friend = "";
     if (document.querySelector('#infosource-media').checked) media = document.querySelector('#infosource-media').value;
     if (document.querySelector('#infosource-friend').checked) friend = document.querySelector('#infosource-friend').value;
+    
+    let wait = "";
+    let online = "";
+    if (document.querySelector('#classValue-physical').checked) wait = document.querySelector('#classValue-physical').value;
+    if (document.querySelector('#classValue-online').checked) online = document.querySelector('#classValue-online').value;
+    
     let code = document.querySelector('#codeValue').value;
     let online = ""
     if (document.querySelector('#onlineValue').checked) online = document.querySelector('#onlineValue').value;
 
     $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbxQgiDSb90bUa7L3m5nwCb1OyAVUY6C825epk-9KRnxJ8q2ojO6qLuUBjEWBWO9C0EH7w/exec",
+        url: "https://script.google.com/macros/s/AKfycbxSOktV69M9aVxzbS6I172TkmHVNgkBQMmyVGEti4Amn2KtV9uD5zWJw--xK_lcWiHhDA/exec",
         data: {
             "name": name,
             "age": age,
@@ -29,7 +35,9 @@ function send() {
             "infoMedia": media,
             "infoFriend": friend,
             "codeSkill": code,
-            "onlineCourse": online
+//             "onlineCourse": online
+            "wait": wait,
+            "online": online
         },
         // success: function(response) {
         //     if (response == "成功") {
