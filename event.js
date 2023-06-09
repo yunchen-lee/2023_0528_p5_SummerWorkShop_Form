@@ -20,8 +20,8 @@ function send() {
     if (document.querySelector('#classValue-online').checked) online = document.querySelector('#classValue-online').value;
     
     let code = document.querySelector('#codeValue').value;
-    let online = ""
-    if (document.querySelector('#onlineValue').checked) online = document.querySelector('#onlineValue').value;
+//     let online = ""
+//     if (document.querySelector('#onlineValue').checked) online = document.querySelector('#onlineValue').value;
 
     $.ajax({
         url: "https://script.google.com/macros/s/AKfycbxSOktV69M9aVxzbS6I172TkmHVNgkBQMmyVGEti4Amn2KtV9uD5zWJw--xK_lcWiHhDA/exec",
