@@ -3,6 +3,7 @@ let sendButton = document.querySelector('button');
 function send() {
     let name = document.querySelector('#nameValue').value;
     let age = document.querySelector('#ageValue').value;
+    let sch = document.querySelector('#schValue').value;
     let phone = document.querySelector('#phoneValue').value;
     let mail = document.querySelector('#mailValue').value;
     let meat = "";
@@ -24,10 +25,11 @@ function send() {
 //     if (document.querySelector('#onlineValue').checked) online = document.querySelector('#onlineValue').value;
 
     $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbxSOktV69M9aVxzbS6I172TkmHVNgkBQMmyVGEti4Amn2KtV9uD5zWJw--xK_lcWiHhDA/exec",
+        url: "https://script.google.com/macros/s/AKfycbwp6uKiADmrR8GhCKphpnmVxidPPL_mJESJruy3Ia-pqTmG74yAeV3sMbInMYh4cbhTCw/exec",
         data: {
             "name": name,
             "age": age,
+            "school": sch,
             "phone": phone,
             "mail": mail,
             "foodMeat": meat,
