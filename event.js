@@ -25,7 +25,7 @@ function send() {
 //     if (document.querySelector('#onlineValue').checked) online = document.querySelector('#onlineValue').value;
 
     $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbzZDVGKjkR4X4jKWxaaMQmDFZFpL1Y3EbTvYqVRuZSH3hIiixt_Vj1H0v7zBKgGjTwHmA/exec",
+        url: "https://script.google.com/macros/s/AKfycbyJYpVTxfx9ggfsnsRPg69WJj0xSSb3aGAAUG5L1dF8TU0yCriLwOM1MCojHAs2cLQrag/exec",
         data: {
             "name": name,
             "age": age,
